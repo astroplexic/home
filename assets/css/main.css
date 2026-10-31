@@ -641,7 +641,7 @@ input, select, textarea {
   		width: 100%;
   		aspect-ratio: 16 / 9;
   		overflow: hidden; /* Prevents any part of the video from spilling out */
-  		margin: 20px 0;   /* Optional spacing around the video */
+  		margin: 0px 0;   /* Optional spacing around the video */
 	}
 
 	.video-container iframe {
