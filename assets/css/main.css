@@ -1130,6 +1130,29 @@ input, select, textarea {
 		line-height: calc(2.75rem - 2px);
 	}
 
+/* robot checker */
+
+	.robot {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 14px 16px;
+		border: 1.5px solid var(--line);
+		border-radius: 10px;
+		cursor: pointer;
+  	}
+  		.robot input {
+			width: 22px; height: 22px; margin: 0;
+			accent-color: var(--accent);
+			cursor: pointer;
+			flex: none;
+	}
+  		.robot span { font-weight: 600; }
+  		.robot:focus-within {
+    		border-color: var(--accent);
+    		box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 28%, transparent);
+  	}
+
 /* BG */
 
 	#bg {
