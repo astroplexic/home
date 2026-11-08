@@ -748,6 +748,12 @@ input, select, textarea {
 
 /* List */
 
+	.service-container {
+  		display: flex;
+  		flex-direction: column; /* Stack all elements vertically */
+  		gap: 0rem;              /* Creates an identical, uniform gap between every item */
+	}
+	
 	ol {
 		list-style: decimal;
 		margin: 0 0 2rem 0;
@@ -755,7 +761,7 @@ input, select, textarea {
 	}
 
 		ol li {
-			padding-left: 0.25em;
+			padding-left: 4em;
 		}
 
 	ul {
