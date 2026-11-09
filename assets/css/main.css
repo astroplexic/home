@@ -761,7 +761,7 @@ input, select, textarea {
 	}
 
 		ol li {
-			padding-left: 0.5em;
+			padding-left: em;
 		}
 
 	ul {
