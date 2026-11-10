@@ -1068,7 +1068,7 @@ input, select, textarea {
 		box-sizing: border-box;
 		display: block;
 		font-size: 1.0rem;
-		font-weight: 600;
+		font-weight: 700;
 		text-align: center;
 		width: 100%;
 	}
@@ -1137,7 +1137,7 @@ input, select, textarea {
 		.button.primary {
 			background-color: #ffffff;
 			color: #1b1f22 !important;
-			font-weight: 600;
+			font-weight: 700;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
