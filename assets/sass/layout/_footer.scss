@@ -23,6 +23,10 @@
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
+
+			a {
+				font-size: 0.8em;
+			}
 		}
 
 		body.is-article-visible & {
