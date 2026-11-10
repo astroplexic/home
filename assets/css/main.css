@@ -1073,6 +1073,58 @@ input, select, textarea {
 		width: 100%;
 	}
 
+	.policy-dropdown {
+		margin: 0 0 1rem 0;
+	}
+
+		.policy-dropdown summary.button {
+			align-items: center;
+			box-sizing: border-box;
+			display: flex;
+			font-size: 1.0rem;
+			font-weight: 700;
+			justify-content: space-between;
+			text-align: left;
+			width: 100%;
+		}
+
+			.policy-dropdown summary.button:focus-visible {
+				outline: 2px solid #ffffff;
+				outline-offset: 3px;
+			}
+
+			.policy-dropdown summary.button::-webkit-details-marker {
+				display: none;
+			}
+
+			.policy-dropdown summary.button:after {
+				content: '+';
+				font-size: 1.25rem;
+				margin-left: 1rem;
+			}
+
+		.policy-dropdown[open] summary.button:after {
+			content: '-';
+		}
+
+		.policy-content {
+			padding: 1.5rem 1rem 0.25rem;
+		}
+
+			.policy-content h3 {
+				font-size: 0.9rem;
+				letter-spacing: 0.1rem;
+				margin: 1.5rem 0 0.75rem;
+			}
+
+			.policy-content h3.major {
+				margin-top: 0;
+			}
+
+			.policy-content p {
+				margin-bottom: 1rem;
+			}
+
 	.return-to-top {
 		text-align: center;
 	}
