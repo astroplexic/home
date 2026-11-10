@@ -1063,6 +1063,21 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
+	.return-to-top {
+		text-align: center;
+	}
+
+		.return-to-top .button {
+			height: auto;
+			line-height: 1.5;
+			padding: 0.75rem 1.25rem;
+		}
+
+		.return-to-top .icon {
+			display: block;
+			font-size: 1.25rem;
+		}
+
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
