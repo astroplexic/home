@@ -48,3 +48,30 @@
 	@import 'layout/header';
 	@import 'layout/main';
 	@import 'layout/footer';
+
+@font-face {
+	font-family: "Font Awesome 7 Brands";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url("../webfonts/fa-brands-400-v7.3.1.woff2") format("woff2");
+}
+
+#projects .fa-venmo-v {
+	display: inline-block;
+	font-family: "Font Awesome 7 Brands";
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	margin-right: 0.5em;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#projects .fa-venmo-v:before {
+	display: inline-block;
+	font-family: "Font Awesome 7 Brands";
+	font-weight: 400;
+	content: "\e85b";
+}
