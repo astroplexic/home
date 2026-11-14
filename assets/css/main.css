@@ -1568,6 +1568,14 @@ input, select, textarea {
 				line-height: 1.875;
 			}
 
+			#header nav ul li a {
+				min-width: 0;
+				padding-right: 0.65rem;
+				padding-left: 0.65rem;
+				letter-spacing: 0.1rem;
+				font-size: 0.75rem;
+			}
+
 		}
 
 		@media screen and (max-width: 480px) {
@@ -1799,4 +1807,186 @@ input, select, textarea {
 	font-family: "Font Awesome 7 Brands";
 	font-weight: 400;
 	content: "\e85b";
+}
+
+#testimonials .testimonial-featured,
+#testimonials .testimonial-card {
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025));
+	border: solid 1px rgba(255, 255, 255, 0.28);
+	border-radius: 0.5rem;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+	padding: 1.5rem;
+}
+
+#testimonials .testimonial-featured {
+	border-top: solid 2px rgba(255, 255, 255, 0.8);
+	margin-bottom: 1.25rem;
+	text-align: left;
+}
+
+	#testimonials .testimonial-featured > p {
+		font-size: 1.55rem;
+		font-family: "Times New Roman", serif;
+		font-style: italic;
+		line-height: 1.7;
+		margin-bottom: 1rem;
+		font-weight: 500;
+		letter-spacing: 0.04rem;
+	}
+
+	#testimonials .testimonial-featured .testimonial-social {
+		justify-content: flex-start;
+	}
+
+#testimonials .testimonial-quote-mark {
+	font-size: 2.25rem;
+	line-height: 1;
+	margin-bottom: 1rem;
+	opacity: 0.8;
+}
+
+#testimonials .testimonial-grid {
+	display: grid;
+	align-items: stretch;
+	gap: 1.25rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#testimonials .testimonial-card {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	min-height: 16rem;
+	transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+#testimonials .testimonial-card:hover {
+	border-color: rgba(255, 255, 255, 0.65);
+	transform: translateY(-3px);
+}
+
+	#testimonials .testimonial-card blockquote {
+		border: 0;
+		flex-grow: 1;
+		font-style: normal;
+		line-height: 1.7;
+		margin: 0 0 1.25rem;
+		padding: 0;
+	}
+
+		#testimonials .testimonial-card blockquote p {
+			font-family: "Times New Roman", serif;
+			font-size: 1.1rem;
+			font-style: italic;
+			font-weight: 500;
+			letter-spacing: 0.04rem;
+		}
+
+		#testimonials .testimonial-card blockquote:before {
+			color: rgba(255, 255, 255, 0.65);
+			content: '\201C';
+			display: block;
+			font-family: Georgia, serif;
+			font-size: 3rem;
+			line-height: 0.8;
+			margin-bottom: 0.75rem;
+		}
+
+		#testimonials .testimonial-card blockquote p:last-child {
+			margin-bottom: 0;
+	}
+
+#testimonials .testimonial-attribution {
+	border-top: solid 1px rgba(255, 255, 255, 0.2);
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 0.7rem;
+	letter-spacing: 0.06rem;
+	padding-top: 1rem;
+}
+
+	#testimonials .testimonial-attribution cite {
+		color: #ffffff;
+		display: block;
+		font-size: 0.95rem;
+		font-style: normal;
+		font-weight: 400;
+	}
+
+		#testimonials .testimonial-attribution cite .testimonial-city {
+			display: inline;
+			font-size: 0.7rem;
+			font-style: normal;
+		}
+
+		#testimonials .testimonial-attribution cite .testimonial-city-separator {
+			color: rgba(255, 255, 255, 0.55);
+			display: inline;
+			font-size: inherit;
+			font-style: normal;
+		}
+
+		#testimonials .testimonial-attribution cite .testimonial-city-label {
+			display: inline;
+			font-size: inherit;
+			font-style: normal;
+			font-weight: 300;
+		}
+
+	#testimonials .testimonial-attribution > span {
+		display: block;
+		font-size: 0.8rem;
+		font-style: italic;
+		font-weight: 500;
+	}
+
+#testimonials .testimonial-social {
+	display: flex;
+	align-items: center;
+	gap: 1.5px;
+	list-style: none;
+	margin: 2px 0 0;
+	padding: 0;
+}
+
+	#testimonials .testimonial-social li {
+		list-style: none;
+		padding: 0;
+	}
+
+	#testimonials .testimonial-social-link {
+		align-items: center;
+		background: none;
+		border: 0;
+		display: inline-flex;
+		height: 1.75rem;
+		justify-content: flex-start;
+		text-decoration: none;
+		width: 1rem;
+	}
+
+	#testimonials .testimonial-social-link[aria-label="TikTok"] {
+		margin-left: 0.5px;
+	}
+
+		#testimonials .testimonial-social-link:hover {
+			opacity: 0.7;
+		}
+
+		#testimonials .testimonial-social-link:focus-visible {
+			outline: solid 1px #ffffff;
+			outline-offset: 2px;
+		}
+
+		#testimonials .testimonial-social-link .icon {
+			font-size: 0.7rem;
+		}
+
+@media screen and (max-width: 736px) {
+	#testimonials .testimonial-grid {
+		grid-template-columns: 1fr;
+	}
+
+	#testimonials .testimonial-card {
+		min-height: 0;
+	}
 }

@@ -217,6 +217,20 @@
 					line-height: 1.875;
 				}
 			}
+
+			nav {
+				ul {
+					li {
+						a {
+							min-width: 0;
+							padding-right: 0.65rem;
+							padding-left: 0.65rem;
+							letter-spacing: 0.1rem;
+							font-size: 0.75rem;
+						}
+					}
+				}
+			}
 		}
 
 		@include breakpoint('<=xsmall') {
