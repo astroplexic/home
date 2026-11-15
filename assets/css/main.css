@@ -1765,14 +1765,14 @@ input, select, textarea {
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
-			font-size: 0.5rem;
+			font-size: 0.6rem;
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
 		}
 
 			#footer .copyright a {
-				font-size: 0.8em;
+				font-size: 0.9em;
 			}
 
 		body.is-article-visible #footer {
