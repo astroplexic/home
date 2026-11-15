@@ -1773,6 +1773,7 @@ input, select, textarea {
 
 			#footer .copyright a {
 				font-size: 0.9em;
+				border-bottom: 0;
 			}
 
 		body.is-article-visible #footer {
