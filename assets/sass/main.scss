@@ -263,7 +263,7 @@
 	}
 
 	#projects ul.actions {
-		flex-direction: column;
+		@include vendor('flex-direction', 'column');
 		margin-left: 0;
 		width: 100%;
 	}

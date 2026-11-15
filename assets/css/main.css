@@ -1996,6 +1996,9 @@ input, select, textarea {
 	}
 
 	#projects ul.actions {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		margin-left: 0;
 		width: 100%;
