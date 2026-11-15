@@ -220,30 +220,6 @@
 
 			nav {
 				ul {
-					li {
-						a {
-							min-width: 0;
-							padding-right: 0.65rem;
-							padding-left: 0.65rem;
-							letter-spacing: 0.1rem;
-							font-size: 0.75rem;
-						}
-					}
-				}
-			}
-		}
-
-		@include breakpoint('<=xsmall') {
-			padding: 1.5rem 0;
-
-			.content {
-				.inner {
-					padding: 2.5rem 0;
-				}
-			}
-
-			nav {
-				ul {
 					@include vendor('flex-direction', 'column');
 					min-width: 10rem;
 					max-width: 100%;
@@ -257,10 +233,18 @@
 						}
 
 						a {
-							height: 3rem;
-							line-height: 3rem;
+							@include vendor('display', 'flex');
+							@include vendor('align-items', 'center');
+							@include vendor('justify-content', 'center');
 							min-width: 0;
+							height: 3rem;
+							line-height: normal;
+							text-align: center;
 							width: 100%;
+							padding-right: 0.65rem;
+							padding-left: 0.65rem;
+							letter-spacing: 0.1rem;
+							font-size: 0.75rem;
 						}
 					}
 				}
@@ -269,6 +253,16 @@
 					&:after {
 						display: none;
 					}
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			padding: 1.5rem 0;
+
+			.content {
+				.inner {
+					padding: 2.5rem 0;
 				}
 			}
 		}
