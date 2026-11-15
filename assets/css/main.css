@@ -1989,4 +1989,29 @@ input, select, textarea {
 	#testimonials .testimonial-card {
 		min-height: 0;
 	}
+
+	#main article#projects {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#projects ul.actions {
+		flex-direction: column;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	#projects ul.actions li {
+		padding: 0.5rem 0 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	#projects ul.actions li:first-child {
+		padding-top: 0;
+	}
+
+	#projects ul.actions li > .button {
+		width: 100%;
+	}
 }
