@@ -1814,6 +1814,11 @@ input, select, textarea {
 	padding: 1.5rem;
 }
 
+#services h2,
+#services h3 {
+	letter-spacing: 0.1rem;
+}
+
 #services .service-card {
 	margin-bottom: 1.25rem;
 }
